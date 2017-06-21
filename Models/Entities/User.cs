@@ -1,19 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 using Models.Base;
 
 
 namespace Models.Entities
 {
-    public class User:IBaseModel<long>
+
+    public class User : IBaseModel<long>
     {
+        [Description("序号")]
         public long Id { get; set; }
 
+
+        [Description("姓名")]
         public string Name { get; set; }
 
+        [Description("年龄")]
         public byte Age { get; set; }
+
     }
+
 }
