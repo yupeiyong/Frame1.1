@@ -46,6 +46,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <Choose>
@@ -63,6 +64,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UnitTestDataBaseContextUpdate.cs" />
     <Compile Include="UnitTestEnumerableHelper.cs" />
     <Compile Include="UnitTest_DataInit.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
