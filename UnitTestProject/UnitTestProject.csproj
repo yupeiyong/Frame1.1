@@ -64,6 +64,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="UnitTestEF.cs" />
     <Compile Include="UnitTestDataBaseContextUpdate.cs" />
     <Compile Include="UnitTestEnumerableHelper.cs" />
     <Compile Include="UnitTest_DataInit.cs" />
