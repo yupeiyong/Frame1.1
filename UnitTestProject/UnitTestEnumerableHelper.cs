@@ -14,15 +14,15 @@ namespace UnitTestProject
         [TestMethod]
         public void TestConvertDataTable()
         {
-            var users=new List<User>()
+            var users = new List<User>()
             {
-                new User {Age=25,Name="John",Id=1 },
-                new User {Age=26,Name="John1",Id=2 },
-                new User {Age=27,Name="John2",Id=3 },
-                new User {Age=28,Name="John3",Id=4 },
-                new User {Age=29,Name="John4",Id=5 },
-                new User {Age=30,Name="John5",Id=6 },
-                new User {Age=31,Name="John6",Id=7 },
+                new User {Name="John",Id=1 },
+                new User {Name="John1",Id=2 },
+                new User {Name="John2",Id=3 },
+                new User {Name="John3",Id=4 },
+                new User {Name="John4",Id=5 },
+                new User {Name="John5",Id=6 },
+                new User {Name="John6",Id=7 },
             };
             var table = users.ConvertDataTable();
         }
@@ -45,7 +45,7 @@ namespace UnitTestProject
             {
                 var property = properties.FirstOrDefault(p => p.Name == "Id");
                 properties.Remove(property);
-                properties.Insert(0,property);
+                properties.Insert(0, property);
             });
         }
 

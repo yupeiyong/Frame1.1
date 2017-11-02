@@ -7,9 +7,11 @@ using Models.Entities;
 
 namespace UnitTestProject
 {
+
     [TestClass]
     public class UnitTestDataInit
     {
+
         [TestMethod]
         public void Test_DataInit()
         {
@@ -18,11 +20,13 @@ namespace UnitTestProject
                 var user = new User
                 {
                     Name = "555555555",
-                    Age = 25
+                    LoginTime=DateTime.Now
                 };
                 dao.Set<User>().AddOrUpdate(user);
                 dao.SaveChanges();
             }
         }
+
     }
+
 }

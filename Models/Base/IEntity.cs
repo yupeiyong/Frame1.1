@@ -1,11 +1,10 @@
 ﻿namespace Models.Base
 {
 
-    public interface IBaseModel<T>
+    public interface IEntity<T>
     {
 
         T Id { get; set; }
-
     }
 
 }

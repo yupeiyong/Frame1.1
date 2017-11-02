@@ -5,7 +5,7 @@ using Models.Base;
 namespace Models.Entities
 {
 
-    public class Manager : IBaseModel<long>
+    public class Manager : IEntity<long>
     {
         [Description("序号")]
         public long Id { get; set; }

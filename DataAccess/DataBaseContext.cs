@@ -30,10 +30,12 @@ namespace DataAccess
         {
             try
             {
+                modelBuilder.Types<BaseEntity>().Configure(entity => entity.Property(p => p.RowVersion).IsRowVersion());
+
                 //获取数据模型
                 var modelTypes = AppDomain.CurrentDomain.Load("Models").GetTypes()
                     .Where(t => t.IsClass && t.GetInterfaces()
-                        .Any(m => m.GetGenericTypeDefinition() == typeof (IBaseModel<>))).ToList();
+                        .Any(m => m.GetGenericTypeDefinition() == typeof (IEntity<>))).ToList();
 
                 //modelBuilder.Configurations.Add(new UserMapping());
                 //获取映射模型

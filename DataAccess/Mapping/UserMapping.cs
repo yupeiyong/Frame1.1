@@ -10,6 +10,7 @@ namespace DataAccess.Mapping
 
         public UserMapping()
         {
+            Property(p => p.RowVersion).IsRowVersion();
             Property(p => p.Name).HasMaxLength(20).IsRequired();
         }
 

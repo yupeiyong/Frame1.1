@@ -10,11 +10,13 @@ using Models.Entities;
 
 namespace UnitTestProject
 {
+
     [TestClass]
     public class UnitTestEf
     {
+
         /// <summary>
-        /// 查询时生成新对象(数据库类)
+        ///     查询时生成新对象(数据库类)
         /// </summary>
         [TestMethod]
         public void Test_Select_New_DataBaseClass()
@@ -25,13 +27,13 @@ namespace UnitTestProject
                 {
                     var users = new List<User>
                     {
-                        new User {Age = 25, Name = "John"},
-                        new User {Age = 26, Name = "John1"},
-                        new User {Age = 27, Name = "John2"},
-                        new User {Age = 28, Name = "John3"},
-                        new User {Age = 29, Name = "John4"},
-                        new User {Age = 30, Name = "John5"},
-                        new User {Age = 31, Name = "John6"}
+                        new User {Name = "John"},
+                        new User {Name = "John1"},
+                        new User {Name = "John2"},
+                        new User {Name = "John3"},
+                        new User {Name = "John4"},
+                        new User {Name = "John5"},
+                        new User {Name = "John6"}
                     };
                     dao.Set<User>().AddRange(users);
                     dao.SaveChanges();
@@ -41,7 +43,7 @@ namespace UnitTestProject
                     //先将旧数据分离
                     dao.Entry(user).State = EntityState.Detached;
                     var id = user.Id;
-                    var newUser = new User { Id = id, Age = 45, Name = "Rose" };
+                    var newUser = new User {Id = id, Name = "Rose"};
                     dao.Entry(newUser).State = EntityState.Modified;
                     dao.SaveChanges();
 
@@ -62,8 +64,9 @@ namespace UnitTestProject
             }
         }
 
+
         /// <summary>
-        /// 查询时生成新对象
+        ///     查询时生成新对象
         /// </summary>
         [TestMethod]
         public void Test_Select_New_Class()
@@ -74,13 +77,13 @@ namespace UnitTestProject
                 {
                     var users = new List<User>
                     {
-                        new User {Age = 25, Name = "John"},
-                        new User {Age = 26, Name = "John1"},
-                        new User {Age = 27, Name = "John2"},
-                        new User {Age = 28, Name = "John3"},
-                        new User {Age = 29, Name = "John4"},
-                        new User {Age = 30, Name = "John5"},
-                        new User {Age = 31, Name = "John6"}
+                        new User {Name = "John"},
+                        new User {Name = "John1"},
+                        new User {Name = "John2"},
+                        new User {Name = "John3"},
+                        new User {Name = "John4"},
+                        new User {Name = "John5"},
+                        new User {Name = "John6"}
                     };
                     dao.Set<User>().AddRange(users);
                     dao.SaveChanges();
@@ -90,9 +93,10 @@ namespace UnitTestProject
                     //先将旧数据分离
                     dao.Entry(user).State = EntityState.Detached;
                     var id = user.Id;
-                    var newUser = new User { Id = id, Age = 45, Name = "Rose" };
+                    var newUser = new User {Id = id, Name = "Rose"};
                     dao.Entry(newUser).State = EntityState.Modified;
                     dao.SaveChanges();
+
                     //非数据库类不会出错
                     var managers = dao.Set<User>().Select(u => new Test
                     {
@@ -101,11 +105,15 @@ namespace UnitTestProject
                 }
             }
         }
+
+
         internal class Test
         {
 
             public string Name { get; set; }
 
         }
+
     }
+
 }

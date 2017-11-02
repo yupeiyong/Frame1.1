@@ -1,11 +1,12 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using Models.Base;
 
 
 namespace Models.Entities
 {
 
-    public class User : IBaseModel<long>
+    public class User : BaseEntity, IEntity<long>
     {
         /// <summary>
         ///     序号
@@ -32,11 +33,9 @@ namespace Models.Entities
         [Description("登录密码")]
         public string Password { get; set; }
 
+        public DateTime LoginTime { get; set; }
 
         /*
-         	[LoginName] [nvarchar](20) NOT NULL,
-	[LoginPass] [nvarchar](32) NOT NULL,
-	[LoginTime] [datetime] NOT NULL,
 	[LoginIp] [nvarchar](30) NOT NULL,
 	[LoginCount] [int] NOT NULL,
 	[CreateTime] [datetime] NOT NULL,

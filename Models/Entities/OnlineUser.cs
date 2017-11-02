@@ -8,8 +8,9 @@ namespace Models.Entities
     /// <summary>
     ///     在线用户
     /// </summary>
-    public class OnlineUser : IBaseModel<long>
+    public class OnlineUser : IEntity<long>
     {
+        public long Id { get; set; }
 
         public string UserHashKey { get; set; }
 
@@ -45,7 +46,6 @@ namespace Models.Entities
 
         public string BrowserVersion { get; set; }
 
-        public long Id { get; set; }
 
         /*
 	[CurrentPage] [nvarchar](100) NOT NULL,

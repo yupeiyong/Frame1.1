@@ -49,7 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\IBaseModel.cs" />
+    <Compile Include="Base\BaseEntity.cs" />
+    <Compile Include="Base\IEntity.cs" />
     <Compile Include="Entities\Manager.cs" />
     <Compile Include="Entities\OnlineUser.cs" />
     <Compile Include="Entities\User.cs" />

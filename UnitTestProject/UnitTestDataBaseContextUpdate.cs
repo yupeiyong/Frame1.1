@@ -23,13 +23,13 @@ namespace UnitTestProject
                 {
                     var users = new List<User>
                     {
-                        new User {Age = 25, Name = "John"},
-                        new User {Age = 26, Name = "John1"},
-                        new User {Age = 27, Name = "John2"},
-                        new User {Age = 28, Name = "John3"},
-                        new User {Age = 29, Name = "John4"},
-                        new User {Age = 30, Name = "John5"},
-                        new User {Age = 31, Name = "John6"}
+                        new User { Name = "John"},
+                        new User {Name = "John1"},
+                        new User { Name = "John2"},
+                        new User {Name = "John3"},
+                        new User {Name = "John4"},
+                        new User {Name = "John5"},
+                        new User { Name = "John6"}
                     };
                     dao.Set<User>().AddRange(users);
                     dao.SaveChanges();
@@ -39,14 +39,13 @@ namespace UnitTestProject
                     //先将旧数据分离
                     dao.Entry(user).State = EntityState.Detached;
                     var id = user.Id;
-                    var newUser = new User {Id = id, Age = 45, Name = "Rose"};
+                    var newUser = new User {Id = id,  Name = "Rose"};
                     dao.Entry(newUser).State = EntityState.Modified;
                     dao.SaveChanges();
 
                     user = dao.Set<User>().AsNoTracking().FirstOrDefault(u => u.Id == id);
                     Assert.IsNotNull(user);
                     Assert.IsTrue(user.Name == newUser.Name);
-                    Assert.IsTrue(user.Age == newUser.Age);
                 }
             }
         }
