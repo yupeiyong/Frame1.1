@@ -54,6 +54,7 @@
     <Compile Include="Entities\Manager.cs" />
     <Compile Include="Entities\OnlineUser.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Enums\UserState.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

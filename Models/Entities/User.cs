@@ -1,11 +1,14 @@
 ﻿using System;
 using System.ComponentModel;
 using Models.Base;
+using Models.Enums;
 
 
 namespace Models.Entities
 {
-
+    /// <summary>
+    /// 用户
+    /// </summary>
     public class User : BaseEntity, IEntity<long>
     {
         /// <summary>
@@ -16,9 +19,6 @@ namespace Models.Entities
 
         [Description("姓名")]
         public string Name { get; set; }
-
-        //[Description("年龄")]
-        //public byte Age { get; set; }
 
         /// <summary>
         ///     帐号
@@ -35,34 +35,56 @@ namespace Models.Entities
 
         public DateTime LoginTime { get; set; }
 
+        public string LoginIp { get; set; }
+
+        public int LoginCount { get; set; }
+
+        public string Tel { get; set; }
+
+        public string Mobile { get; set; }
+
+        public string Email { get; set; }
+
+        public string Qq { get; set; }
+
+        public string Sex { get; set; }
+
+        /// <summary>
+        ///     用户状态
+        /// </summary>
+        public UserState UserState { get; set; }
+
+
+        /// <summary>
+        ///     是否支持多地登录
+        /// </summary>
+        public bool IsMultiUser { get; set; }
+
+
+        public DateTime? Birthday { get; set; }
+
+
+        /// <summary>
+        ///     用户头像
+        /// </summary>
+        public string PhotoImg { get; set; }
+
         /*
-	[LoginIp] [nvarchar](30) NOT NULL,
-	[LoginCount] [int] NOT NULL,
-	[CreateTime] [datetime] NOT NULL,
-	[UpdateTime] [datetime] NOT NULL,
-	[IsMultiUser] [tinyint] NOT NULL,
 	[Branch_Id] [int] NOT NULL,
 	[Branch_Code] [nvarchar](20) NOT NULL,
 	[Branch_Name] [nvarchar](25) NOT NULL,
 	[Position_Id] [nvarchar](50) NOT NULL,
 	[Position_Name] [nvarchar](100) NOT NULL,
-	[IsWork] [tinyint] NOT NULL,
-	[IsEnable] [tinyint] NOT NULL,
+
 	[CName] [nvarchar](20) NOT NULL,
 	[EName] [nvarchar](50) NOT NULL,
 	[PhotoImg] [nvarchar](250) NOT NULL,
-	[Sex] [nvarchar](4) NOT NULL,
-	[Birthday] [nvarchar](20) NOT NULL,
 	[NativePlace] [nvarchar](100) NOT NULL,
 	[NationalName] [nvarchar](50) NOT NULL,
 	[Record] [nvarchar](25) NOT NULL,
 	[GraduateCollege] [nvarchar](30) NOT NULL,
 	[GraduateSpecialty] [nvarchar](50) NOT NULL,
-	[Tel] [nvarchar](30) NOT NULL,
-	[Mobile] [nvarchar](30) NOT NULL,
-	[Email] [nvarchar](50) NOT NULL,
-	[Qq] [nvarchar](30) NOT NULL,
-	[Msn] [nvarchar](30) NOT NULL,
+
 	[Address] [nvarchar](100) NOT NULL,
 	[Content] [ntext] NOT NULL,
 	[Manager_Id] [int] NOT NULL,
