@@ -18,7 +18,7 @@ namespace Models.Enums
         [Description("帐户启用")] Enable = 1,
 
         /// <summary>
-        ///     帐户启用
+        ///     帐户已注销
         /// </summary>
         [Description("帐户已注销")] Cancelled = 2
 
