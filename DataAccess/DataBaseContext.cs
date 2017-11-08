@@ -3,11 +3,11 @@ using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Reflection;
-using DataAccess.Migrations;
-using Models.Base;
+using Peiyong.DataAccess.Migrations;
+using Peiyong.Models.Base;
 
 
-namespace DataAccess
+namespace Peiyong.DataAccess
 {
 
     public class DataBaseContext : DbContext

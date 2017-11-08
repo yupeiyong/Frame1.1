@@ -1,10 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
-using Models.Base;
-using Models.Enums;
+using Peiyong.Models.Base;
+using Peiyong.Models.Enums;
 
 
-namespace Models.Entities
+namespace Peiyong.Models.Entities
 {
     /// <summary>
     /// 用户

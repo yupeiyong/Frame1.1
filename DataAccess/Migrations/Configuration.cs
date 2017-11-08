@@ -1,11 +1,10 @@
-namespace DataAccess.Migrations
-{
-    using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Migrations;
-    using System.Linq;
+using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<DataAccess.DataBaseContext>
+
+namespace Peiyong.DataAccess.Migrations
+{
+
+    internal sealed class Configuration : DbMigrationsConfiguration<DataBaseContext>
     {
         public Configuration()
         {
@@ -13,7 +12,7 @@ namespace DataAccess.Migrations
             AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(DataAccess.DataBaseContext context)
+        protected override void Seed(DataBaseContext context)
         {
             //  This method will be called after migrating to the latest version.
 

@@ -1,4 +1,4 @@
-﻿namespace DataTransferObjects
+﻿namespace Peiyong.DataTransferObjects
 {
 
     public class UserLoginDto

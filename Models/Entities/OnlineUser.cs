@@ -1,8 +1,8 @@
 ﻿using System;
-using Models.Base;
+using Peiyong.Models.Base;
 
 
-namespace Models.Entities
+namespace Peiyong.Models.Entities
 {
 
     /// <summary>

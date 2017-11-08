@@ -1,8 +1,8 @@
 ﻿using System.Data.Entity.ModelConfiguration;
-using Models.Entities;
+using Peiyong.Models.Entities;
 
 
-namespace DataAccess.Mapping
+namespace Peiyong.DataAccess.Mapping
 {
 
     public class UserMapping : EntityTypeConfiguration<User>

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 
 
-namespace Models.Enums
+namespace Peiyong.Models.Enums
 {
 
     public enum UserState

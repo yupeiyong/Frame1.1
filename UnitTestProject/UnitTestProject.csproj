@@ -72,17 +72,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+    <ProjectReference Include="..\DataAccess\Peiyong.DataAccess.csproj">
       <Project>{3f8532bb-e8e4-487a-a9d1-5e0bfe911be0}</Project>
-      <Name>DataAccess</Name>
+      <Name>Peiyong.DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Library\Library.csproj">
+    <ProjectReference Include="..\Library\Peiyong.Library.csproj">
       <Project>{19f9def6-76ea-4b29-9974-637d2197d498}</Project>
-      <Name>Library</Name>
+      <Name>Peiyong.Library</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Models\Models.csproj">
+    <ProjectReference Include="..\Models\Peiyong.Models.csproj">
       <Project>{95d4b0a7-ae6c-419f-a32b-1efaeac5af03}</Project>
-      <Name>Models</Name>
+      <Name>Peiyong.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -45,23 +45,29 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="UnitTestAutofacContainerFactory.cs" />
+    <Compile Include="UnitTestCommonBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Logic\Logic.csproj">
+    <ProjectReference Include="..\Logic\Peiyong.Logic.csproj">
       <Project>{c14f3bda-9bcb-4927-bf21-1c3e636881d1}</Project>
-      <Name>Logic</Name>
+      <Name>Peiyong.Logic</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Models\Models.csproj">
+    <ProjectReference Include="..\Models\Peiyong.Models.csproj">
       <Project>{95d4b0a7-ae6c-419f-a32b-1efaeac5af03}</Project>
-      <Name>Models</Name>
+      <Name>Peiyong.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

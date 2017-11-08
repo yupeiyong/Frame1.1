@@ -1,4 +1,4 @@
-﻿namespace Models.Base
+﻿namespace Peiyong.Models.Base
 {
 
     public interface IEntity<T>

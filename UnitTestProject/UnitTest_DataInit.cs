@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Data.Entity.Migrations;
-using DataAccess;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Models.Entities;
+using Peiyong.DataAccess;
+using Peiyong.Models.Entities;
 
 
 namespace UnitTestProject

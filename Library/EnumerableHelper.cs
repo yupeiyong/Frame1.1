@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reflection;
 
 
-namespace Library
+namespace Peiyong.Library
 {
 
     public static class EnumerableHelper

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Transactions;
-using DataAccess;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Models.Entities;
+using Peiyong.DataAccess;
+using Peiyong.Models.Entities;
 
 
 namespace UnitTestProject

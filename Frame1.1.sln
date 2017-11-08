@@ -5,25 +5,25 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Data", "1.Data", "{3B51A6FE-43FE-4D6F-B95A-3FE96948792E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{95D4B0A7-AE6C-419F-A32B-1EFAEAC5AF03}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peiyong.Models", "Models\Peiyong.Models.csproj", "{95D4B0A7-AE6C-419F-A32B-1EFAEAC5AF03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{3F8532BB-E8E4-487A-A9D1-5E0BFE911BE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peiyong.DataAccess", "DataAccess\Peiyong.DataAccess.csproj", "{3F8532BB-E8E4-487A-A9D1-5E0BFE911BE0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject", "UnitTestProject\UnitTestProject.csproj", "{701E0EA5-98C9-4E7D-8445-A6ACA97D32CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library", "Library\Library.csproj", "{19F9DEF6-76EA-4B29-9974-637D2197D498}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peiyong.Library", "Library\Peiyong.Library.csproj", "{19F9DEF6-76EA-4B29-9974-637D2197D498}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Presentation", "3.Presentation", "{95FAC4B9-D8AD-4F9B-9D4F-E0428FB9913B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPc", "WebPc\WebPc.csproj", "{96609B00-A0AA-474B-998C-C95E724E5F65}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peiyong.WebPc", "WebPc\Peiyong.WebPc.csproj", "{96609B00-A0AA-474B-998C-C95E724E5F65}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Logic", "2.Logic", "{D756A4B8-4736-4AAD-8EEE-68960BC48342}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Test", "4.Test", "{01818270-2E8F-4831-B671-FA4724D96F8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{C14F3BDA-9BCB-4927-BF21-1C3E636881D1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peiyong.Logic", "Logic\Peiyong.Logic.csproj", "{C14F3BDA-9BCB-4927-BF21-1C3E636881D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTransferObjects", "DataTransferObjects\DataTransferObjects.csproj", "{219BD536-9AEE-40BF-B2EA-C3C2BBF64EDC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peiyong.DataTransferObjects", "DataTransferObjects\Peiyong.DataTransferObjects.csproj", "{219BD536-9AEE-40BF-B2EA-C3C2BBF64EDC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Utilities", "DotNet.Utilities\DotNet.Utilities.csproj", "{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}"
 EndProject

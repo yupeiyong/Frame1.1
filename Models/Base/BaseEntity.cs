@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace Models.Base
+namespace Peiyong.Models.Base
 {
 
     /// <summary>
