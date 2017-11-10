@@ -63,7 +63,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Models\Peiyong.Models.csproj">
+    <ProjectReference Include="..\Peiyong.Models\Peiyong.Models.csproj">
       <Project>{95d4b0a7-ae6c-419f-a32b-1efaeac5af03}</Project>
       <Name>Peiyong.Models</Name>
     </ProjectReference>

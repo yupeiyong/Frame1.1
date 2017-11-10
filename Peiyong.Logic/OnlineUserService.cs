@@ -291,10 +291,13 @@ namespace Peiyong.Logic
             {
                 using (var dao = new DataBaseContext())
                 {
-
-                    var onlineUser = dao.Set<OnlineUser>().FirstOrDefault(o => o.Id == model.Id);
-                    if (onlineUser != null)
+                    if (model.Id > 0)
                     {
+                        var onlineUser = dao.Set<OnlineUser>().FirstOrDefault(o => o.Id == model.Id);
+                        if (onlineUser == null)
+                        {
+                            throw new Exception($"错误，保存在线用户失败，在线用户不存在！(Id:{model.Id})");
+                        }
                         dao.Entry(onlineUser).State = EntityState.Modified;
                     }
                     else
@@ -607,33 +610,6 @@ namespace Peiyong.Logic
             }
         }
 
-        ///// <summary>
-        ///// 生成加密串——用户加密密钥计算
-        ///// </summary>
-        ///// <param name="model">在线实体</param>
-        ///// <returns></returns>
-        //public string GenerateMd5(OnlineUser model)
-        //{
-        //    if (model == null)
-        //    {
-        //        return RandomHelper.GetRndKey();
-        //    }
-        //    else
-        //    {
-        //        return Encrypt.Md5(model.UserKey + model.Manager_LoginName + model.Manager_LoginPass + model.UserKey.Substring(6, 8));
-        //    }
-        //}
-
-        ///// <summary>
-        ///// 生成加密串——用户加密密钥计算，直接读取当前用户实体
-        ///// </summary>
-        ///// <returns></returns>
-        //public string GenerateMd5()
-        //{
-        //    //读取当前用户实体
-        //    var model = GetOnlineUsersModel();
-        //    return GenerateMd5(model);
-        //}
         #endregion
     }
 

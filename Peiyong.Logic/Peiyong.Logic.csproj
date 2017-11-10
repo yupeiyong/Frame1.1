@@ -97,11 +97,11 @@
     <Compile Include="UserService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\Peiyong.DataAccess.csproj">
+    <ProjectReference Include="..\Peiyong.DataAccess\Peiyong.DataAccess.csproj">
       <Project>{3f8532bb-e8e4-487a-a9d1-5e0bfe911be0}</Project>
       <Name>Peiyong.DataAccess</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DataTransferObjects\Peiyong.DataTransferObjects.csproj">
+    <ProjectReference Include="..\Peiyong.DataTransferObjects\Peiyong.DataTransferObjects.csproj">
       <Project>{219BD536-9AEE-40BF-B2EA-C3C2BBF64EDC}</Project>
       <Name>Peiyong.DataTransferObjects</Name>
     </ProjectReference>
@@ -109,7 +109,7 @@
       <Project>{0A9704F9-7864-45AF-BFA7-E09F2B30A29F}</Project>
       <Name>DotNet.Utilities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Models\Peiyong.Models.csproj">
+    <ProjectReference Include="..\Peiyong.Models\Peiyong.Models.csproj">
       <Project>{95d4b0a7-ae6c-419f-a32b-1efaeac5af03}</Project>
       <Name>Peiyong.Models</Name>
     </ProjectReference>

@@ -29,7 +29,10 @@ namespace DotNet.Utilities.Log
                     Loginfo.Info(info);
                 }
             }
-            catch { }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
 

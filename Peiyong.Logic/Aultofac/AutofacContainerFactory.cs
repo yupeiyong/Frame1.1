@@ -19,13 +19,13 @@ namespace Peiyong.Logic.Aultofac
 
         static AutofacContainerFactory()
         {
-            var types = GetRegisteringTypes(new[] {"namespacePrefixes"});
+            var types = GetRegisteringTypes(new[] { "Peiyong.", "DotNet." });
 
             var builder = new ContainerBuilder();
             builder.RegisterTypes(types).AsSelf().InstancePerDependency().PropertiesAutowired(PropertyWiringOptions.PreserveSetValues);
-            Container = builder.Build(ContainerBuildOptions.None);
+            Container = builder.Build();
             //依赖注入
-            DependencyResolver.SetResolver(new AutofacDependencyResolver(AutofacContainerFactory.GetContainer()));
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(GetContainer()));
         }
 
 

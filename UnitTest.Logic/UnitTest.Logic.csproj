@@ -57,17 +57,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Logic\Peiyong.Logic.csproj">
-      <Project>{c14f3bda-9bcb-4927-bf21-1c3e636881d1}</Project>
-      <Name>Peiyong.Logic</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Models\Peiyong.Models.csproj">
-      <Project>{95d4b0a7-ae6c-419f-a32b-1efaeac5af03}</Project>
-      <Name>Peiyong.Models</Name>
-    </ProjectReference>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\Peiyong.Logic\Peiyong.Logic.csproj">
+      <Project>{C14F3BDA-9BCB-4927-BF21-1C3E636881D1}</Project>
+      <Name>Peiyong.Logic</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
