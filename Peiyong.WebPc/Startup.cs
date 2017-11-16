@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Owin;
+using Peiyong.WebPc;
 
-[assembly: OwinStartup(typeof(WebPc.Startup))]
 
-namespace WebPc
+[assembly: OwinStartup(typeof(Startup))]
+
+namespace Peiyong.WebPc
 {
     public partial class Startup
     {

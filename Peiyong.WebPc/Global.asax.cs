@@ -15,7 +15,6 @@ namespace Peiyong.WebPc
 
     public class WebApiApplication : HttpApplication
     {
-
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();

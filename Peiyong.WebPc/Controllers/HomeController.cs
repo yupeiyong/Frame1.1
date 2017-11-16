@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using Peiyong.CommonController.Controllers;
 
-namespace WebPc.Controllers
+
+namespace Peiyong.WebPc.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
-
+            var x = Convert.ToInt16("ddddd");
             return View();
         }
     }

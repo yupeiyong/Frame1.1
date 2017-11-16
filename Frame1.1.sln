@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peiyong.Logic", "Peiyong.Lo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject.NotNet.Utilities", "UnitTestProject.NotNet.Utilities\UnitTestProject.NotNet.Utilities.csproj", "{9694881E-9923-4094-8CCE-EB0A86C5C76D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peiyong.CommonController", "Peiyong.CommonController\Peiyong.CommonController.csproj", "{B5C29E32-6D8B-446D-8DA6-2A42C2AFAC04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{9694881E-9923-4094-8CCE-EB0A86C5C76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9694881E-9923-4094-8CCE-EB0A86C5C76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9694881E-9923-4094-8CCE-EB0A86C5C76D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5C29E32-6D8B-446D-8DA6-2A42C2AFAC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5C29E32-6D8B-446D-8DA6-2A42C2AFAC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5C29E32-6D8B-446D-8DA6-2A42C2AFAC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5C29E32-6D8B-446D-8DA6-2A42C2AFAC04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +98,6 @@ Global
 		{19F9DEF6-76EA-4B29-9974-637D2197D498} = {D756A4B8-4736-4AAD-8EEE-68960BC48342}
 		{C14F3BDA-9BCB-4927-BF21-1C3E636881D1} = {D756A4B8-4736-4AAD-8EEE-68960BC48342}
 		{9694881E-9923-4094-8CCE-EB0A86C5C76D} = {01818270-2E8F-4831-B671-FA4724D96F8A}
+		{B5C29E32-6D8B-446D-8DA6-2A42C2AFAC04} = {95FAC4B9-D8AD-4F9B-9D4F-E0428FB9913B}
 	EndGlobalSection
 EndGlobal
